@@ -1,8 +1,8 @@
 (library
  (name Revery_Core)
- (public_name Revery.Core)
+ (public_name revery.core)
  (preprocess
   (pps ppx_deriving.show ppx_optcomp))
  (preprocessor_deps ../Native/config.h)
- (libraries threads str lwt sdl2 skia flex Rench re Revery_Native
+ (libraries threads str lwt sdl2 skia flex re Revery_Native
    Revery_TextWrap timber Revery_Zed))

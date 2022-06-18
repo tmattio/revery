@@ -1,6 +1,6 @@
 (library
  (name Revery_IO)
- (public_name Revery.IO)
+ (public_name revery.io)
  (preprocess
   (pps lwt_ppx))
  (libraries bos lwt lwt.unix Revery_Core))

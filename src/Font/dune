@@ -1,14 +1,22 @@
 (library
  (name Revery_Font)
- (public_name Revery.Font)
+ (public_name revery.font)
  (preprocess
   (pps lwt_ppx))
- (libraries harfbuzz lru lwt lwt.unix sdl2 flex rebez.lib Revery_Core
-   Revery_Math Revery_Zed))
+ (libraries
+  harfbuzz
+  lru
+  lwt
+  lwt.unix
+  sdl2
+  flex
+  Revery_Core
+  Revery_Math
+  Revery_Zed))
 
 (copy_files files/*)
 
 (install
  (section bin)
- (package Revery)
+ (package revery)
  (files Inconsolata.otf))

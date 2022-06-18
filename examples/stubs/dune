@@ -1,5 +1,5 @@
 (library
- (name ExampleStubs)
+ (name revery_examples_stubs)
  (foreign_stubs
   (language c)
   (names example_stubs)

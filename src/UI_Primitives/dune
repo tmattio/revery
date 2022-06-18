@@ -1,6 +1,6 @@
 (library
  (name Revery_UI_Primitives)
- (public_name Revery.UI_Primitives)
+ (public_name revery.ui-primitives)
  (preprocess
   (pps brisk-reconciler.ppx))
  (libraries lwt lwt.unix sdl2 flex Revery_Core Revery_Math Revery_UI

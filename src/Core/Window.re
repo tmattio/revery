@@ -87,7 +87,7 @@ module WindowMetrics: {
         //     https://github.com/glfw/glfw/blob/250b94cd03e6f947ba516869c7f3b277f8d0cacc/src/x11_init.c#L938
         //     https://wiki.archlinux.org/index.php/HiDPI
         | Linux(_) =>
-          switch (Rench.Environment.getEnvironmentVariable("GDK_SCALE")) {
+          switch (Sys.getenv_opt("GDK_SCALE")) {
           | None => 1.0
           | Some(v) =>
             Log.trace(

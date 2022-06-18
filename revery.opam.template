@@ -1,0 +1,23 @@
+pin-depends: [
+  ["lru.0.4.0" "git+https://github.com/bryphe/lru#2708c70"]
+  ["brisk-reconciler.0.1.0" "git+https://github.com/briskml/brisk-reconciler#c9d5c4c"]
+  ["flex.0.1.0" "git+https://github.com/tmattio/flex#acff843c30c1f9f46d4ad48cd87f6542613b6d5a"]
+  ["timber.0.1.0" "git+https://github.com/tmattio/timber#352fcf0d254507a037268718a15ea6ed7e35c7fa"]
+  # For Rely
+  ["rely.0.1.0" "git+https://github.com/reasonml/reason-native#aec0ac681be7211b4d092262281689c46deb63e1"]
+  ["pastel.0.1.0" "git+https://github.com/reasonml/reason-native#aec0ac681be7211b4d092262281689c46deb63e1"]
+  ["file-context-printer.0.1.0" "git+https://github.com/reasonml/reason-native#aec0ac681be7211b4d092262281689c46deb63e1"]
+]
+build: [
+  ["dune" "subst"] {pinned}
+  [
+    "dune"
+    "build"
+    "-p"
+    name
+    "-j"
+    jobs
+    "@install"
+    "@doc" {with-doc}
+  ]
+]

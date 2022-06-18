@@ -137,7 +137,7 @@ let executingDirectory = getExecutingDirectory();
 let getAssetPath = p => {
   isNative
     ? {
-      Rench.Path.isAbsolute(p) ? p : executingDirectory ++ p;
+      Filename.is_relative(p) ? executingDirectory ++ p : p;
     }
     : p;
 };

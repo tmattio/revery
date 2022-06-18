@@ -1,3 +1,19 @@
+# ocamlbuild working directory
+_build/
+
+# ocamlbuild targets
+*.byte
+*.native
+
+# Merlin configuring file for Vim and Emacs
+.merlin
+
+# Dune generated files
+*.install
+
+# Local OPAM switch
+_opam/
+
 # Logs
 logs
 *.log
@@ -63,11 +79,6 @@ typings/
 
 # dune build folder
 _esy/
-
-# install files
-*.install
-
-**/.merlin
 
 #macOS
 .DS_Store
